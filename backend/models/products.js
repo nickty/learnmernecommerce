@@ -35,26 +35,26 @@ const productSchema = new mongoose.Schema({
             }
         }
     ], 
-    // category: {
-    //     type: String, 
-    //     required: [true, 'Please select category for this product'], 
-    //     enum: {
-    //         values: [
-    //             'Electronics', 
-    //             'Cameras', 
-    //             'Laptops', 
-    //             'Accessories', 
-    //             'Headphones', 
-    //             'Food', 
-    //             'Books', 
-    //             'Cloth/health', 
-    //             'Sports', 
-    //             'Outdoor', 
-    //             'Home'
-    //         ], 
-    //         message: 'Please select correct category for products'
-    //     }
-    // }, 
+    category: {
+        type: String, 
+        //required: [true, 'Please select category for this product'], 
+        enum: {
+            values: [
+                'Electronics', 
+                'Cameras', 
+                'Laptops', 
+                'Accessories', 
+                'Headphones', 
+                'Food', 
+                'Books', 
+                'Cloth/health', 
+                'Sports', 
+                'Outdoor', 
+                'Home'
+            ], 
+            message: 'Please select correct category for products'
+        }
+    }, 
     seller: {
         type: String, 
         required: [true, 'Please enter product seller']
